@@ -17,7 +17,6 @@ def get_str_center(input_str):
     return output_str
 
 
-
 def count_symbols(input_str):
     output_dict = dict()
     for letter in input_str:
