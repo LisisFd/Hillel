@@ -9,7 +9,7 @@ class TestGame(unittest.TestCase):
         self.map = {(self.room1.x, self.room1.y): self.room1,
                (self.room2.x, self.room2.y): self.room2
                }
-        self.game = Game(self.map)
+        self.game = Game(self.ma    p)
         self.game.current_room = self.game._get_room(0, 0)
 
     def test_move_positive(self):
