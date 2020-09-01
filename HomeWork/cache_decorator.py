@@ -28,5 +28,3 @@ def get_value(a, b):
     :return: a to the power b
     """
     return a ** b
-
-print(get_value(2,3))
