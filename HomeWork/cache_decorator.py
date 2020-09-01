@@ -16,7 +16,7 @@ def do_cache(func):
         elif len(cache.keys()) == 3:
           cache.pop(list(cache.keys())[0])
         cache[args] = func(*args)
-        return func(*args)
+        return cache.get(args)
     return wrapper
 
 
@@ -29,3 +29,4 @@ def get_value(a, b):
     """
     return a ** b
 
+print(get_value(2,3))
